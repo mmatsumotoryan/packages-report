@@ -2,7 +2,7 @@
 title: "RMarkdown for Git"
 author: "Mona Matsumoto-Ryan"
 date: "1/27/2020"
-output: html_document
+output: github_document
 ---
 
 ```{r setup, include=FALSE}
