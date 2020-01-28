@@ -1,0 +1,35 @@
+---
+title: "RMarkdown for Git"
+author: "Mona Matsumoto-Ryan"
+date: "1/27/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+What does this look like?
+
+```{r code_chunk_1, eval=FALSE}
+
+randu # random nums df
+
+```
+
+```{r code_chunk_2_plotting}
+
+library(ggplot2)
+
+randu_plot <- ggplot(data=randu, aes(x=x, y=z))+
+  geom_line()
+
+
+```
+```{r plot, echo=FALSE}
+
+print(randu_plot)
+```
+
+
